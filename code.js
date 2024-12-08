@@ -15,7 +15,7 @@ likeButtons.forEach(button => {
 
 const favButtons = document.querySelectorAll('.fav');
 favButtons.forEach(button => {
-
+  
   button.addEventListener('click', () => {
     button.classList.toggle('active');
     if (button.classList.contains('active')) {
@@ -42,3 +42,7 @@ favButtons.forEach(button => {
     }
   })
 })
+
+const searchButton = document.querySelector('.search');
+searchButton.addEventListener('click', () => document.querySelector('input[type="search"]').focus()
+)
