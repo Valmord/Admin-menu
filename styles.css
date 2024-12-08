@@ -112,3 +112,7 @@ main {
 .card img:hover {
   filter: brightness(0) saturate(100%) invert(29%) sepia(15%) saturate(3297%) hue-rotate(216deg) brightness(92%) contrast(89%);
 }
+
+.active {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(15%) saturate(3297%) hue-rotate(216deg) brightness(92%) contrast(89%);
+}
