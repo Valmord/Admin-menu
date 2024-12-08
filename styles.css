@@ -9,7 +9,7 @@
   font-size: 16px;
   line-height: 1.5;
   --main-color: rgb(133, 16, 206);
-  --secondary-color: #fdf4ff;
+  --secondary-color: #fbe8ff;
   --third-color: white;
 
 }
@@ -24,7 +24,61 @@ body {
 header {
   grid-area: 1 / 2 / 2 / 3;
   background-color: var(--third-color);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
 }
+
+header img {
+  height: 30px;
+}
+
+header img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+header > .top h3 {
+  margin-right: 20px;
+}
+
+.user-pic {
+  height: 50px;
+  border: black 3px solid;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+header .top {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 50px;
+}
+
+header input[type='search'] {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+  margin-right: min(100px, 80%);
+  flex: 1;
+}
+
+header .bottom {
+  display: flex;
+  align-items: center;
+}
+
+
+header button {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 3rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+
+
 
 ul {
   list-style: none;
