@@ -37,11 +37,28 @@ ul {
 
 .sidebar > ul {
   display: grid;
-  grid-template-rows: repeat(6, 20px) 50px repeat(3,20px);
+  grid-template-rows: repeat(6, 20px) 10px repeat(3,20px);
   row-gap: 20px;
   padding-left: 50px;
 }
 
 main {
   background-color: #fdf4ff;
+}
+
+li {
+  position: relative;
+  cursor: pointer;
+}
+
+li:hover {
+  opacity: 0.8;
+}
+
+li > img {
+  height: 20px;
+  position: absolute;
+  left: -30px;
+  top: 4px;
+  filter: invert(100%);
 }
