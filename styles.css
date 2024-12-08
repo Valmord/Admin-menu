@@ -17,7 +17,7 @@
 body {
   display: grid;
   grid-template-columns: 250px 1fr;
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: 180px min(700px, 1fr);
   min-height: 100vh;
 }
 
@@ -25,8 +25,9 @@ header {
   grid-area: 1 / 2 / 2 / 3;
   background-color: var(--third-color);
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  padding: 20px 30px;
+  padding: 15px 30px;
 }
 
 header img {
@@ -58,7 +59,7 @@ header .top {
 
 header input[type='search'] {
   background-color: var(--secondary-color);
-  border-radius: 10px;
+  border-radius: 18px;
   border: none;
   padding: 5px 10px;
   margin-right: min(100px, 80%);
@@ -68,14 +69,42 @@ header input[type='search'] {
 header .bottom {
   display: flex;
   align-items: center;
+
+  & img {
+    height: 70px;
+  }
+
+  & .welcome-message {
+    margin-left: 20px;
+    margin-right: auto;
+    line-height: 1.2;
+    & p {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    & h1 {
+      font-size: 2rem;
+    }
+  }
+
+  & .header-buttons {
+    height: 100%  ;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 
 header button {
   background-color: var(--secondary-color);
-  padding: 0.5rem 3rem;
+  height: 3rem;
+  padding: 0px 2rem;
   border-radius: 1.5rem;
   border: none;
+  color: var(--main-color);
+  font-weight: bold;
 }
 
 
